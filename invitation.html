@@ -132,7 +132,7 @@
                 <img src="./michelle-aaron/anh/pic4-10.png" alt="" class="img-p3">
             </div>
             <div id="xac-nhan">
-                <form action="" name="ngoc-tuan">
+                <form action="" name="michelle-aaron">
                     <div class="box-flow">
                         <img src="./michelle-aaron/anh/no-02.png" alt="" class="img-flow3">
                     </div>
@@ -146,11 +146,11 @@
                         <label for="" class="lb">BẠN SẼ ĐẾN CHUNG VUI CÙNG CÔ DÂU CHÚ RỂ CHỨ?</label>
                     </div> -->
                     <div class="container-check">
-                        <input class="box-feed" type="radio" value="YES" id="yes" name="CONFIRM">
+                        <input required class="box-feed" type="radio" value="YES" id="yes" name="CONFIRM">
                         <label class="check-box" for="yes">
                             <h3 class="til-check">YES</h3>
                         </label>
-                        <input class="box-feed" type="radio" value="NO" id="no" name="CONFIRM">
+                        <input required class="box-feed" type="radio" value="NO" id="no" name="CONFIRM">
                         <label class="check-box" for="no"> 
                             <h3 class="til-check">NO</h3>
                         </label>
@@ -158,8 +158,8 @@
 
                     <div class="box-ten">
                         <input required class="inp-ten" type="text"  name="NAME" placeholder="Name">
-                        <input required class="inp-ten" type="text"  name="EMAIL ADDRESS" placeholder="Email Address">
-                        <input required class="inp-ten" type="text"  name="Date and time of flight to Vietnam" placeholder="Date and time of your arrival flight to Vietnam:">
+                        <input required class="inp-ten" type="email" name="EMAIL ADDRESS" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <input required class="inp-ten" type="date" name="Date and time of flight to Vietnam" placeholder="Date of your arrival flight to Vietnam:">
                         <input required class="inp-ten" type="text"  name="HOTEL NAME" placeholder="Hotel name:">
                         <!-- <input required class="inp-ten" type="number" name="SỐ KHÁCH ĐI KÈM" placeholder="BẠN DỰ ĐỊNH ĐI CÙNG VỚI BAO NHIÊU NGƯỜI?" min="0" max="99" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2);" /> -->
 
@@ -493,8 +493,8 @@ function showPopup() {
 
 
 <script>
-       const scriptURL = 'https://script.google.com/macros/s/AKfycbybWiTnU7sELFjav3_FVamMIJ-B3vTwBeMBw25A1rRGbBrtKB29SLG6Zc_RWn-Wq-D-/exec';
-        const form = document.forms['#'];
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbzZMeYnrMdCi_Qr5X9cqCYrADc_k0vBRVKeKq-B38BQS1MlVJ69ZjoIX6UhVsAD5SU/exec';
+        const form = document.forms['michelle-aaron']; // Thay 'your-form-name' bằng tên form của bạn
 
         form.addEventListener('submit', e => {
             e.preventDefault(); // Ngừng việc gửi form mặc định
@@ -514,11 +514,13 @@ function showPopup() {
                         document.getElementById('loading-container').style.display = 'none';
 
                         Swal.fire({
-                            title: 'Thành công',
-                            text: 'Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến dâu rể rồi nhaa <3',
+                            title: 'SUCCESS!',
+                            icon: 'success',
+                            text: 'Thank you for sending your feedback; The information has been sent to the bride and groom!',
                             imageWidth: 300,
                             imageHeight: 200,
-                            confirmButtonText: 'ĐÓNG',
+                            confirmButtonText: 'CLOSE',
+                            showCloseButton: true,
                             background: '#f8f8f8',
                             padding: '20px',
                             customClass: {
