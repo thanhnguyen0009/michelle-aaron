@@ -1314,5 +1314,11 @@ background-color: var(--primary-color);
     .lb7-p2{
         font-size: .55em;
     }
+    .btn-acc{
+        font-size: .6em;
+    }
+    .lb-acc{
+        font-size: .4em;
+    }
   }
   
