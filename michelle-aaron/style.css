@@ -382,6 +382,7 @@
     overflow: hidden;
     border: 1px solid #111;
     color: var(--primary-color);
+    background: #E8E6D9;
 }
 
 .container-wrapper{
@@ -1061,13 +1062,25 @@ background-color: var(--primary-color);
     margin-top: 20px;
 }
 
+.btn-acc2{
+    text-decoration: none;
+    color: #111;
+    font-size: .6em;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid #111;
+    margin-top: 20px;
+}
+
 .lb-acc{
     font-family: var(--font-gotham);
     color: #111;
-    font-size: .45em;
+    font-size: .5em;
     font-weight: 400;
     font-style: italic;
 }
+
+
 
 .til-acc{
     font-family: var(--font-ftv);
@@ -1316,6 +1329,9 @@ background-color: var(--primary-color);
     }
     .btn-acc{
         font-size: .6em;
+    }
+    .btn-acc2{
+        font-size: .5em;
     }
     .lb-acc{
         font-size: .4em;
