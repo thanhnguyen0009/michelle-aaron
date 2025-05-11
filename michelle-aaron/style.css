@@ -557,9 +557,16 @@
     margin-top: 5px;
 }
 
-.lb7-p2{
+.lb7-p2 {
     font-size: .65em;
     margin-top: 20px;
+    font-weight: 400; /* Đậm nhất có thể */
+    text-shadow: 
+        0.02em 0 0 var(--color-text), 
+        -0.02em 0 0 var(--color-text), 
+        0 0.02em 0 var(--color-text), 
+        0 -0.02em 0 var(--color-text); /* Bóng nhỏ để tăng độ dày thị giác */
+    letter-spacing: -0.01em; /* Giảm nhẹ khoảng cách chữ */
 }
 
 .btn-map{
@@ -614,6 +621,10 @@
     font-size: .6em;
     margin-top: 5px;
     letter-spacing: 1px;
+}
+
+.lb3-p3{
+    color: rgb(187, 0, 0);
 }
 
 .color{
@@ -797,9 +808,12 @@ border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-
+.lbb{
+    font-size: .8em;
+}
 
 .lb-text{
     font-family: var(--font-gotham);
@@ -1335,6 +1349,9 @@ background-color: var(--primary-color);
     }
     .lb-acc{
         font-size: .4em;
+    }
+    .lb3-top{
+        font-size: .6em;
     }
   }
   
