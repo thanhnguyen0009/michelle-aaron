@@ -562,10 +562,10 @@
     margin-top: 20px;
     font-weight: 400; /* Đậm nhất có thể */
     text-shadow: 
-        0.02em 0 0 var(--color-text), 
-        -0.02em 0 0 var(--color-text), 
-        0 0.02em 0 var(--color-text), 
-        0 -0.02em 0 var(--color-text); /* Bóng nhỏ để tăng độ dày thị giác */
+        0.03em 0 0 var(--color-text), 
+        -0.03em 0 0 var(--color-text), 
+        0 0.03em 0 var(--color-text), 
+        0 -0.03em 0 var(--color-text); /* Bóng nhỏ để tăng độ dày thị giác */
     letter-spacing: -0.01em; /* Giảm nhẹ khoảng cách chữ */
 }
 
